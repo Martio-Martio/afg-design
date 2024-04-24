@@ -95,6 +95,7 @@ nav.header-nav > ul >li >a {
 .nav-background {
   background: #2c3392;
   width: 100%;
+  left: 20%;
   height: 50px;
   position: absolute;
   top: 0;

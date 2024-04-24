@@ -6,60 +6,58 @@ import Logo from "/logo.svg";
 
 export const NavbarConnected = () => {
   return (
-    <header>
-      <div className="header-wrapper">
-        <div className="header-logo">
-          <a href="/">
-            <img src={Logo} className="ml-10 h-[80px]" alt="logo" />
-          </a>
-        </div>
-        <nav className="invisible md:visible header-nav">
-          <ul className="flex-col hidden px-1 pt-6 h-30 toggle-menu md:flex md:bg-transparent md:pt-0 md:flex-row md:space-x-10 md:w-auto md:items-end md:justify-end">
-            <li className="py-2 mt-2 text-left transition-transform border-t border-b border-afg border-lg hover:-translate-y-1 md:border-0">
-              <Link
-                to="/"
-                className="mb-8 text-lg font-medium text-white hover:text-amber-500"
-              >
-                Demande de devis &#11163;
+    <>
+      <div className="w-full max-sm:bg-white md:bg-[url('/bg_round.svg')] bg-no-repeat bg-right-bottom">
+        <nav className="container relative p-0 mx-auto">
+          <div className="flex items-center justify-between">
+            <div className="pt-2">
+              <Link to="/">
+                <img src={Logo} alt="" className="h-[80px] w-full" />
               </Link>
-            </li>
+            </div>
 
-            <li className="py-2 mt-2 text-center transition-transform border-t border-b border-gray-200 hover:-translate-y-1 md:border-0">
-              <Link
-                to="/"
-                className="mb-8 text-lg font-medium text-white hover:text-amber-500"
+            <div className="items-center hidden space-x-6 md:flex">
+              <a href="#" className="hover:text-darkGrayishBlue">
+                <Link
+                  to="/"
+                  className="mb-8 text-sm font-medium text-white md:text-md lg:text-lg hover:text-amber-500"
+                >
+                  Demande de devis &#11163;
+                </Link>
+              </a>
+              <a href="#" className="hover:text-darkGrayishBlue">
+                <Link
+                  to="/"
+                  className="mb-8 text-sm font-medium text-white md:text-md lg:text-lg hover:text-amber-500"
+                >
+                  Réclamations &#11163;
+                </Link>
+              </a>
+              <a href="#" className="hover:text-darkGrayishBlue">
+                <Link
+                  to="/"
+                  className="mb-8 text-sm font-medium text-white md:text-md lg:text-lg hover:text-amber-500"
+                >
+                  Changement d’agent &#11163;
+                </Link>
+              </a>
+              {/* <a href="#"></a> */}
+              <a
+                href="#"
+                className="flex flex-row items-center space-x-3 hover:text-darkGrayishBlue"
               >
-                Réclamations &#11163;
-              </Link>
-            </li>
-
-            <li className="py-2 mt-2 text-center transition-transform border-t border-b border-gray-200 hover:-translate-y-1 md:border-0">
-              <Link
-                to="/"
-                className="mb-8 text-lg font-medium text-white hover:text-amber-500"
-              >
-                Changement d’agent &#11163;
-              </Link>
-            </li>
-
-            <img
-              src={Avatar}
-              className="absolute overflow-visible md:w-[55px] lg:right-[9%] md:right-[10%] sm:right-[-10%]"
-              alt="logo"
-            />
-            <li className="py-2 mt-2 text-center transition-transform border-t border-b border-gray-200 hover:-translate-y-1 md:border-0">
-              <Link
-                to="/"
-                className="mb-8 text-lg font-medium text-white hover:text-amber-500"
-              >
-                Darius Boti &#11163;
-              </Link>
-            </li>
-          </ul>
-
-          <div className="nav-background"></div>
+                <img src={Avatar} className=" w-[35px] md:mb-0 " alt="logo" />
+                <Link
+                  to="/"
+                  className="mb-0 text-sm font-medium text-white md:text-md lg:text-lg hover:text-amber-500"
+                >
+                  Darius Boti &#11163;
+                </Link>
+              </a>
+            </div>
+          </div>
         </nav>
       </div>
-    </header>
+    </>
   );
 };
