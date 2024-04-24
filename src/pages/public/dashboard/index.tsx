@@ -15,7 +15,7 @@ function Dashboard() {
     navigate("/devis");
   };
   return (
-    <div className="w-full ">
+    <div className="w-full h-full">
       <section className={`relative bg-white`}>
         {NavbarConnected()}
 
@@ -37,7 +37,7 @@ function Dashboard() {
           <div className="grid grid-cols-12 gap-6">
             <div
               onClick={showDevis}
-              className="relative col-span-12 sm:col-span-12 md:col-span-6 lg:col-span-4"
+              className="relative col-span-12 max-sm:col-span-12 md:col-span-6 lg:col-span-4"
             >
               <div className="relative w-[100%]">
                 <Card

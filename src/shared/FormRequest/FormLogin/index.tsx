@@ -52,8 +52,8 @@ function FormLogin() {
 
   return (
     <>
-      <div className="grid grid-cols-5 py-5 ">
-        <div className="col-span-5 sm:col-span-3 sm:mr-0 md:col-span-4 md:mr-0 lg:col-span-4 lg:mr-0 xl:col-span-3 xl:mr-0">
+      <div className="grid w-full h-full grid-cols-5 py-5">
+        <div className="col-span-5 max-sm:col-span-3 sm:mr-0 md:col-span-4 md:mr-0 lg:col-span-4 lg:mr-0 xl:col-span-3 xl:mr-0">
           <Form {...form}>
             <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-5">
               <FormField
