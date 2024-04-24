@@ -7,10 +7,10 @@ import Logo from "/logo.svg";
 export const NavbarConnected = () => {
   return (
     <header>
-      <div className="header-wrapper">
+      <div className="header-wrapper max-sm:max-h-16">
         <div className="header-logo">
           <a href="/">
-            <img src={Logo} className="ml-10 h-[80px]" alt="logo" />
+            <img src={Logo} className="h-12 ml-10" alt="logo" />
           </a>
         </div>
         <nav className="invisible md:visible header-nav">

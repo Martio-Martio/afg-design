@@ -6,14 +6,14 @@ import Bubbles from "/bubbles.svg";
 
 function Vitrine() {
   return (
-    <div className="w-full">
+    <div className="w-full h-full">
       <section className={`relative bg-afg`}>
         {NavbarVisitor()}
 
         <div className="grid grid-cols-12">
           <div className="relative col-span-12 ">
             <div className="container mx-auto ">
-              <div className="relative w-[50%] sm:[100%] md:[100%]">
+              <div className="relative lg:w-[50%] max-sm:[100%] md:[70%]">
                 <h3 className="text-lg font-bold text-left text-green-500 sm:text-lg md:text-xl lg:text-2xl">
                   Bienvenue dans l'espace
                 </h3>
@@ -32,7 +32,7 @@ function Vitrine() {
                   </p>
                 </div>
 
-                {<FormLogin />}
+                {FormLogin()}
                 <div className="w-20 h-full col-span-2 icon-mid assistant-ove-lay">
                   <img
                     src={Bubbles}
