@@ -32,7 +32,7 @@ function Vitrine() {
                   </p>
                 </div>
 
-                {<FormLogin />}
+                {FormLogin()}
                 <div className="w-20 h-full col-span-2 icon-mid assistant-ove-lay">
                   <img
                     src={Bubbles}
