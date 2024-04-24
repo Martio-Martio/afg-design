@@ -13,4 +13,3 @@ we used **vercel** to deploy the solution : [Official Site](https://vercel.com/)
 
 You can find me here:  [Yves Boah](www.linkedin.com/in/yves-martial-boah/)
 
-### Setup bito génère la procédure d'installation
