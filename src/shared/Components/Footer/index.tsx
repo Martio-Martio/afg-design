@@ -9,9 +9,10 @@ export function FooterComponent() {
 
       <section
         id="Footer"
-        className="absolute bottom-0 flex flex-col w-full bg-afg"
+        // className="absolute bottom-0 flex-col hidden w-full max-sm:block bg-afg"
+        className="bg-afg"
       >
-        <div className="container flex flex-col w-full mx-auto my-10 md:flex-row">
+        <div className="container flex flex-col w-full py-20 mx-auto md:flex-row">
           <div className="flex flex-col justify-start md:w-3/4 lg:w-3/4 md:flex-row">
             <div className="mr-4">
               <img

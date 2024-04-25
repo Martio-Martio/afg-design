@@ -16,24 +16,24 @@ function Dashboard() {
   };
   return (
     <div className="w-full h-full">
-      <section className={`relative bg-white`}>
-        {NavbarConnected()}
+      <section className={`relative bg-white`}>{NavbarConnected()}</section>
 
-        <div className="grid grid-cols-12">
-          <div className="relative col-span-12">
-            <div className="container mx-auto ">
-              <div className="relative w-[100%]">
-                <h1 className="py-12 ml-2 text-2xl font-bold text-center text-afg sm:text-3xl md:text-4xl lg:text-5xl ">
-                  Dites-nous comment pouvons-vous vous être utile.
-                </h1>
+      <div className="container relative p-6 mx-auto">
+        <section>
+          <div className="grid grid-cols-12">
+            <div className="relative col-span-12">
+              <div className="container mx-auto ">
+                <div className="relative w-[100%]">
+                  <h1 className="py-12 ml-2 text-2xl font-bold text-center text-afg sm:text-3xl md:text-4xl lg:text-5xl ">
+                    Dites-nous comment pouvons-vous vous être utile.
+                  </h1>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <section className={` bg-white`}>
-        <div className="container mx-auto ">
+        <section className={` bg-white`}>
           <div className="grid grid-cols-12 gap-6">
             <div
               onClick={showDevis}
@@ -106,18 +106,18 @@ function Dashboard() {
               </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <section className={` h-full py-10`}>
-        <div className="flex items-center justify-center">
-          <div className="h-[200px;] bottom-5">
-            <img src={Interrogation} className="h-24 " alt="Interrogation" />
+        <section className={` h-full py-12`}>
+          <div className="flex items-center justify-center">
+            <img src={Interrogation} className="h-24" alt="Interrogation" />
+            {/* <div className="h-[200px;] bottom-5">
+            </div> */}
           </div>
-        </div>
-      </section>
+        </section>
+      </div>
 
-      <div className="invisible h-auto md:visible">{FooterComponent()}</div>
+      {FooterComponent()}
     </div>
   );
 }
